@@ -8,11 +8,6 @@
 
 import Foundation
 
-enum InWord {
-    case correct
-    case incorrect
-}
-
 enum GameValue {
     case win
     case loss

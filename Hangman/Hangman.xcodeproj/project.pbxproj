@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C5E2EE4237DEBC300A0A8C2 /* GameValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5E2EE3237DEBC300A0A8C2 /* GameValue.swift */; };
 		0C5E2EE6237DEBF600A0A8C2 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5E2EE5237DEBF600A0A8C2 /* Game.swift */; };
+		0CE639FC237F579100E64E93 /* LetterStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE639FB237F579100E64E93 /* LetterStatus.swift */; };
 		57FCB5F421A36D3D00163B8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCB5F321A36D3D00163B8E /* AppDelegate.swift */; };
 		57FCB5F621A36D3D00163B8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCB5F521A36D3D00163B8E /* ViewController.swift */; };
 		57FCB5F921A36D3D00163B8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57FCB5F721A36D3D00163B8E /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		0C5E2EE3237DEBC300A0A8C2 /* GameValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameValue.swift; sourceTree = "<group>"; };
 		0C5E2EE5237DEBF600A0A8C2 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Game.swift; path = ../Game.swift; sourceTree = "<group>"; };
+		0CE639FB237F579100E64E93 /* LetterStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterStatus.swift; sourceTree = "<group>"; };
 		57FCB5F021A36D3D00163B8E /* Hangman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hangman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57FCB5F321A36D3D00163B8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57FCB5F521A36D3D00163B8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				57FCB5F521A36D3D00163B8E /* ViewController.swift */,
 				0C5E2EE5237DEBF600A0A8C2 /* Game.swift */,
 				0C5E2EE3237DEBC300A0A8C2 /* GameValue.swift */,
+				0CE639FB237F579100E64E93 /* LetterStatus.swift */,
 				57FCB5F721A36D3D00163B8E /* Main.storyboard */,
 				57FCB5FA21A36D3E00163B8E /* Assets.xcassets */,
 				57FCB5FC21A36D3E00163B8E /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 				0C5E2EE4237DEBC300A0A8C2 /* GameValue.swift in Sources */,
 				57FCB5F421A36D3D00163B8E /* AppDelegate.swift in Sources */,
 				0C5E2EE6237DEBF600A0A8C2 /* Game.swift in Sources */,
+				0CE639FC237F579100E64E93 /* LetterStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

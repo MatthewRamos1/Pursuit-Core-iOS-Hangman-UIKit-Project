@@ -17,8 +17,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var gameResultLabel: UILabel!
     @IBOutlet weak var newGameButton: UIButton!
     var game = Game()
-    var gameRunning: Bool {
-        gameResultLabel.text == "You win!" || gameResultLabel.text == "You lose!"
+    var gameStatusValue: GameValue = .ongoing{
+        didSet {
+            if gameStatusValue == .ongoing {
+                newGameButton.isHidden = true
+            } else {
+                newGameButton.isHidden = false
+            }
+        }
     }
     
     
@@ -27,15 +33,15 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
         textField.delegate = self
-        newGameButton.isHidden = gameRunning
+        newGameButton.isHidden = true
     
   }
 
     @IBAction func newGamePressed(_ sender: UIButton) {
         game.newGame()
         hangmanView.image = nil
-        
         promptLabel.text = "Input word to be guessed:"
+        gameStatusValue = .ongoing
     }
     
 }
@@ -78,9 +84,10 @@ extension ViewController: UITextFieldDelegate {
                 }
             }
             textField.text = nil
-            if game.gameStatus() == .win {
+            gameStatusValue = game.gameStatus()
+            if gameStatusValue == .win {
                 gameResultLabel.text = "You win!"
-            } else if game.gameStatus() == .loss {
+            } else if gameStatusValue == .loss {
                 gameResultLabel.text = "You lose!"
             }
         }

@@ -35,8 +35,8 @@ class Game {
         return word
     }
     
-    func letterCheck(_ input: Character) -> InWord {
-        var wasInWord: InWord = .incorrect
+    func letterCheck(_ input: Character) -> letterStatus {
+        var wasInWord: letterStatus = .incorrect
         for index in 0...(chosenWordArray.count - 1) {
             if input == chosenWordArray[index] {
                 hiddenWordArray[index] = input
