@@ -13,3 +13,8 @@ enum InWord {
     case incorrect
 }
 
+enum GameValue {
+    case win
+    case loss
+    case ongoing
+}

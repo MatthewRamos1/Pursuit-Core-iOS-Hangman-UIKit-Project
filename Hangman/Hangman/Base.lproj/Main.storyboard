@@ -41,13 +41,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSx-eo-DSJ">
+                                <rect key="frame" x="20" y="554" width="374" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcj-Qo-ZoV">
+                                <rect key="frame" x="170" y="746" width="75" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="New Game"/>
+                                <connections>
+                                    <action selector="newGamePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="17h-Hx-1ph"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="gameResultLabel" destination="HSx-eo-DSJ" id="uwI-o6-vhG"/>
                         <outlet property="hangmanLettersLabel" destination="x8I-eG-dJ6" id="QK2-8H-4tr"/>
                         <outlet property="hangmanView" destination="bVV-sB-SU7" id="jsS-Ud-XbD"/>
+                        <outlet property="newGameButton" destination="wcj-Qo-ZoV" id="UZp-wf-acv"/>
                         <outlet property="promptLabel" destination="qzX-Gu-ywo" id="QNc-G2-Nbb"/>
                         <outlet property="textField" destination="OT5-Ma-aSQ" id="Bon-B9-8cv"/>
                     </connections>

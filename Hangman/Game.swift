@@ -49,9 +49,20 @@ class Game {
         return wasInWord
         }
     
-    func gameOver() {
+    func gameStatus() -> GameValue {
         if missCount == 7 {
-            
+            return .loss
+        } else if chosenWordArray == hiddenWordArray {
+            return .win
+        } else {
+            return .ongoing
         }
+    }
+    
+    func newGame() {
+        missCount = 0
+        chosenWord = ""
+        hiddenWordArray = []
+        chosenWordArray = []
     }
 }
